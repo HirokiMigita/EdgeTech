@@ -78,7 +78,7 @@ if __name__ == '__main__':
     test_date = "2023_10_12_12_54"#left
     '''
 
-    train_date = "2023_10_12_19_00"
+    #train_date = "2023_10_12_19_00"
     train_date = "2023_10_13_11_33"
     test_date = "2023_10_13_11_36"  # almost same
 

@@ -109,13 +109,13 @@ if __name__ == "__main__":
         print("Press Ctrl+C to quit")
 
         for object in object_name:
-            # initial data
             ser.reset_input_buffer()
             filepath = f'{dir_for_learning}\\{object}.csv'
             # measurement
             i = 0
             value = np.zeros([count, num_sensor])
             Timer(5)
+            # initial data
             initial = recieve_ain_values(ser)
             while initial == 0:
                 initial = recieve_ain_values(ser)

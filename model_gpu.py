@@ -322,7 +322,7 @@ class ESN:
             if self.noise is not None:
                 x_in += self.noise
 
-            # リザバー状態ベクトル ここいじる
+            # リザバー状態ベクトル
             x = self.Reservoir(x_in)
             #if n % (train_len/num_object) == 1:
             #    self.Reservoir.reset_reservoir_state()
@@ -369,7 +369,7 @@ class ESN:
                 x_back = self.Feedback(self.y_prev)
                 x_in += x_back
 
-            # リザバー状態ベクトル ここいじる
+            # リザバー状態ベクトル
             x = self.Reservoir(x_in)
             #if n % (test_len/num_object) == 1:
             #    self.Reservoir.reset_reservoir_state()
