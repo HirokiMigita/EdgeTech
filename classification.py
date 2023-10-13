@@ -71,16 +71,9 @@ if __name__ == '__main__':
     after_touch = 3800
 
     start_time = time.time()
-    '''4object
-    train_date = "2023_10_12_12_21"
-    test_date = "2023_10_12_12_24"#almost same
-    test_date = "2023_10_12_12_38"#right
-    test_date = "2023_10_12_12_54"#left
-    '''
 
-    #train_date = "2023_10_12_19_00"
-    train_date = "2023_10_13_11_33"
-    test_date = "2023_10_13_11_36"  # almost same
+    train_date = "2023_10_12_20_40"
+    test_date = "2023_10_13_16_06"
 
     file_train = gl.glob(f"learning/{train_date}/*")
     file_train = natsorted(file_train)
